@@ -1,11 +1,12 @@
 ## Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
+-----------
 #### 官网:http://valgrind.org/
 #### 用户开发手册地址:http://valgrind.org/docs/manual/manual.html
-
+------------
 
 ##### 下载安装步骤：
 > ① git clone git@github.com:meihao1203/Valgrind<br>
->> 或：git clone https://github.com/meihao1203/Valgrind<br>
+> 或：git clone https://github.com/meihao1203/Valgrind<br>
 >  ② tar -xvzf valgrind-3.13.0.tar.gz<br>
 > ③ cd valgrind-3.13.0<br>
 > ④ make<br>
@@ -13,7 +14,7 @@
 
 ##### 查看是否安装成功:
 > valgrind --version<br>
->>>  显示 valgrind-3.13.0 即为成功
+        `显示 valgrind-3.13.0 即为成功`
 
 ##### 查看帮助:
 > valgrind --help
