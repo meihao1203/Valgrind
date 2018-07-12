@@ -5,7 +5,7 @@
 
 ##### 下载安装步骤：
 > ① git clone git@github.com:meihao1203/Valgrind<br>
->   git clone https://github.com/meihao1203/Valgrind<br>
+>>> 或：git clone https://github.com/meihao1203/Valgrind<br>
 > ② tar -xvzf valgrind-3.13.0.tar.gz<br>
 > ③ cd valgrind-3.13.0<br>
 > ④ make<br>
@@ -13,12 +13,12 @@
 
 ##### 查看是否安装成功:
 > valgrind --version<br>
->  显示 valgrind-3.13.0 即为成功`
+>>>  显示 valgrind-3.13.0 即为成功
 
 ##### 查看帮助:
 > valgrind --help
 
-Demo小例子
+###### Demo小例子
 ```C++
 1  ///
 2  /// @file    uninit.cpp
