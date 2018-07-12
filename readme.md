@@ -1,15 +1,15 @@
-##Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
+Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
 #### 官网:http://valgrind.org/
 #### 用户开发手册地址:http://valgrind.org/docs/manual/manual.html
 
 
 下载安装步骤：
-> ① git clone git@github.com:meihao1203/Valgrind
-> （git clone https://github.com/meihao1203/Valgrind）
-> ② tar -xvzf valgrind-3.13.0.tar.gz
-> ③ cd valgrind-3.13.0
-> ④ make
-> ⑤ sudo make install
+> ① git clone git@github.com:meihao1203/Valgrind<br>
+> （git clone https://github.com/meihao1203/Valgrind）<br>
+> ② tar -xvzf valgrind-3.13.0.tar.gz<br>
+> ③ cd valgrind-3.13.0<br>
+> ④ make<br>
+> ⑤ sudo make install<br>
 
 查看是否安装成功:
 > valgrind --version
@@ -19,19 +19,19 @@ valgrind --help   (查看帮助)
 
 Demo小例子
 ```C++
- ///
- /// @file    uninit.cpp
- /// @author  meihao1203(meihao19931203@outlook.com)
- /// @date    2018-07-12 19:59:17
- ///
- 
-#include<iostream>
-using namespace std;
-int main(int argc,char** argv)
-{
-	int* arr = new int[5];  //没有释放，内存泄露
-	return 0;
-}
+1  ///
+2  /// @file    uninit.cpp
+3  /// @author  meihao1203(meihao19931203@outlook.com)
+4  /// @date    2018-07-12 19:59:17
+5  ///
+6 
+7  #include<iostream>
+8  using namespace std;
+9  int main(int argc,char** argv)
+10 {
+11	int* arr = new int[5];  //没有释放，内存泄露
+12	return 0;
+13 }
 ```
 编译：
 > g++ -g uninit.cpp
