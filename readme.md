@@ -5,19 +5,19 @@
 ------------
 
 ##### 下载安装步骤：
-> ① git clone git@github.com:meihao1203/Valgrind<br>
-> 或：git clone https://github.com/meihao1203/Valgrind<br>
->  ② tar -xvzf valgrind-3.13.0.tar.gz<br>
-> ③ cd valgrind-3.13.0<br>
-> ④ make<br>
-> ⑤ sudo make install<br>
+> ① `git clone git@github.com:meihao1203/Valgrind`<br>
+> 或：`git clone https://github.com/meihao1203/Valgrind`<br>
+> ② `tar -xvzf valgrind-3.13.0.tar.gz`<br>
+> ③ `cd valgrind-3.13.0`<br>
+> ④ `make`<br>
+> ⑤ `sudo make install`<br>
 
 ##### 查看是否安装成功:
-> valgrind --version<br>
-        `显示 valgrind-3.13.0 即为成功`
+> `valgrind --version`<br>
+> 显示 valgrind-3.13.0 即为成功
 
 ##### 查看帮助:
-> valgrind --help
+> `valgrind --help`
 
 ###### Demo小例子
 ```C++
@@ -29,19 +29,17 @@
 6 
 7  #include<iostream>
 8  using namespace std;
-9  int main(int argc,char** argv)
-```
-```C++
+9  int main(int argc,char** argv)``` ```C++
 10 {
 11	int* arr = new int[5];  //没有释放，内存泄露
 12	return 0;
 13 }
 ```
 ##### 编译：
-> g++ -g uninit.cpp
+> `g++ -g uninit.cpp`
 
 ##### 使用valgrind调试,显示出详细的内存泄露信息，以及错误发生在哪一行:
-> valgrind --tool=memcheck --leak-check=full ./a.out
+> `valgrind --tool=memcheck --leak-check=full ./a.out`
 ```C++
 //==18626== Memcheck, a memory error detector
 //==18626== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
