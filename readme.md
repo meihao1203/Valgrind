@@ -1,4 +1,4 @@
-##Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具##
+##Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
 #### 官网:http://valgrind.org/
 #### 用户开发手册地址:http://valgrind.org/docs/manual/manual.html
 
