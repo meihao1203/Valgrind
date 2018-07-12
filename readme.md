@@ -1,21 +1,22 @@
-Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
+## Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
 #### 官网:http://valgrind.org/
 #### 用户开发手册地址:http://valgrind.org/docs/manual/manual.html
 
 
-下载安装步骤：
+##### 下载安装步骤：
 > ① git clone git@github.com:meihao1203/Valgrind<br>
-> （git clone https://github.com/meihao1203/Valgrind）<br>
+>   git clone https://github.com/meihao1203/Valgrind<br>
 > ② tar -xvzf valgrind-3.13.0.tar.gz<br>
 > ③ cd valgrind-3.13.0<br>
 > ④ make<br>
 > ⑤ sudo make install<br>
 
-查看是否安装成功:
-> valgrind --version
-> `      显示 valgrind-3.13.0 即为成功`
+##### 查看是否安装成功:
+> valgrind --version<br>
+>  显示 valgrind-3.13.0 即为成功`
 
-valgrind --help   (查看帮助)
+##### 查看帮助:
+> valgrind --help
 
 Demo小例子
 ```C++
@@ -28,15 +29,17 @@ Demo小例子
 7  #include<iostream>
 8  using namespace std;
 9  int main(int argc,char** argv)
+```
+```C++
 10 {
 11	int* arr = new int[5];  //没有释放，内存泄露
 12	return 0;
 13 }
 ```
-编译：
+##### 编译：
 > g++ -g uninit.cpp
 
-使用valgrind调试,显示出详细的内存泄露信息，以及错误发生在哪一行
+##### 使用valgrind调试,显示出详细的内存泄露信息，以及错误发生在哪一行:
 > valgrind --tool=memcheck --leak-check=full ./a.out
 ```C++
 //==18626== Memcheck, a memory error detector
@@ -66,7 +69,7 @@ Demo小例子
 //==18626== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
 ```
 
-valgrind --help对应的中文
+##### valgrind --help对应的中文:
 ```C++
 用法: valgrind [options] prog-and-args
 [options]: 常用选项，适用于所有Valgrind工具
