@@ -1,7 +1,6 @@
 ## Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
------------
-#### 官网:http://valgrind.org/
-#### 用户开发手册地址:http://valgrind.org/docs/manual/manual.html
+### 官网:http://valgrind.org/
+### 用户开发手册地址:http://valgrind.org/docs/manual/manual.html
 ------------
 
 ##### 下载安装步骤：
@@ -29,7 +28,7 @@
 6 
 7  #include<iostream>
 8  using namespace std;
-9  int main(int argc,char** argv)``` ```C++
+9  int main(int argc,char** argv) 
 10 {
 11	int* arr = new int[5];  //没有释放，内存泄露
 12	return 0;
