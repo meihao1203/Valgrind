@@ -37,7 +37,7 @@
 ##### 编译：
 > g++ -g uninit.cpp
 
-##### 使用valgrind调试,显示出详细的内存泄露信息，以及错误发生在哪一行:
+##### 使用valgrind调试，显示出详细的内存泄露信息，以及错误发生在哪一行:
 > valgrind --tool=memcheck --leak-check=full ./a.out
 ```C++
 //==18626== Memcheck, a memory error detector
