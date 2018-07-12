@@ -6,7 +6,7 @@
  
 #include<iostream>
 using namespace std;
-int main()
+int main(int argc,char** argv)
 {
 	int* arr = new int[5];  //没有释放，内存泄露
 	return 0;
