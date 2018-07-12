@@ -5,8 +5,8 @@
 
 ##### 下载安装步骤：
 > ① git clone git@github.com:meihao1203/Valgrind<br>
->>> 或：git clone https://github.com/meihao1203/Valgrind<br>
-> ② tar -xvzf valgrind-3.13.0.tar.gz<br>
+>> 或：git clone https://github.com/meihao1203/Valgrind<br>
+>  ② tar -xvzf valgrind-3.13.0.tar.gz<br>
 > ③ cd valgrind-3.13.0<br>
 > ④ make<br>
 > ⑤ sudo make install<br>
